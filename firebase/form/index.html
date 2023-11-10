@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="main">
+    <h1>Lets Sign up !!!</h1>
+
+    <input type="text" id="email" placeholder="Enter Email">
+
+    <input type="password" id="password" placeholder="Enter Password">
+
+    <button id="button" onclick="signUp()">Sign up</button>
+    <br>
+    <br>
+
+    <a href="login.html">Already have an account? Sign in</a>
+    <br>
+    <br>
+    
+    <div class="line"></div>
+
+    <button class="media" onclick="loginWithGoogle()">Singup With Google 
+       </button> 
+       <br>
+       <br>
+
+    <button  class="media" onclick="loginWithGithub()">Singup With Github </button>
+
+    
+
+</div>
+    <script src="app.js"></script>
+</body>
+</html>

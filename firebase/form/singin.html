@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINGIN</title>
+<!-- firebase link -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+<!-- styleSheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,200;1,300&display=swap" rel="stylesheet">
+<!-- icon cdan -->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <h1>SIGNIN</h1>
+        <a href="sinup.html">create account</a>
+
+        <input id="siEmail" placeholder="Enter Email" type="text" id="input">
+        <input id="siPassword"  placeholder="Enter Password" type="password" id="password">
+       
+        <button onclick="singin()" id="button">SINGIN</button>
+        <p  style="color: red; cursor: pointer; margin-bottom: 30px;">forget Password</p>
+        <div id="link">
+            <a href="">login with google<i class="ri-google-fill"></i></a> <br><br><br>
+            <a href="">login with github<i class="ri-github-fill"></i></a>
+        </div>
+    </div>
+    
+    <script type="module" src="app.js"></script>
+</body>
+</html>
